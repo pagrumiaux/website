@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Pierre-Amaury Grumiaux">
+    <title>Pierre-Amaury Grumiaux</title>
+
+    <link rel="canonical" href="none">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="{{url_for('static', filename='style.css')}}" rel="stylesheet">
+    <script src="https://use.fontawesome.com/a01ee2d83e.js"></script>
+
+  </head>
+  
+  <body>
+    <!-- top nav bar -->
+    <nav class="navbar fixed-top navbar-expand-lg chiller-theme">
+      <div class="container-fluid">
+      
+        <!-- home logo -->
+        <a class="navbar-brand" href="{{url_for('index')}}">
+          <img class="logo horizontal-logo" src="{{url_for('static', filename='img/home_grey_24.png')}}" alt="home">
+        </a>
+        
+        <!-- button for dropdown nav if size too small -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <!-- nav bar container -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="{{url_for('research')}}" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              Research
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="{{url_for('music')}}" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              Music
+              </a>
+            </li>
+                    <li class="nav-item dropdown">
+              <a class="nav-link" href="{{url_for('sound_design')}}" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              Sound design
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{url_for('about')}}">
+                About me
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+<div class="page-wrapper chiller-theme toggled">
+  <nav id="sidebar" class="sidebar-wrapper">
+    <div class="sidebar-content">
+      <div class="sidebar-header">
+        <div class="user-pic">
+          <img class="img-responsive img-rounded" src="{{url_for('static', filename='img/pp.jpg')}}" alt="cafaitlemec">
+        </div>
+        <div class="user-info">
+          <span class="user-name">Pierre-Amaury Grumiaux</span>
+          <span class="user-role">PhD Student</span>
+          <span class="user-affiliation">Orange Labs</span>
+          <span class="user-affiliation">GIPSA-lab, Grenoble-INP</span>
+        </div>
+      </div>
+      <!-- sidebar-header  -->
+      <div class="sidebar-menu">
+        <ul>
+          <li>
+            <a href="http://www.wiki-rennes.fr/Sp%C3%A9cial:Page_au_hasard">
+              <i class="fa fa-map-marker"></i>
+              <span>Rennes</span>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:pierreamaury.grumiaux@gmail.com">
+              <i class="fa fa-envelope"></i>
+              <span>Email</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/P.AGrumiaux/">
+              <i class="fa fa-facebook"></i>
+              <span>Facebook</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/pierre-amaury-grumiaux-352b719a/">
+              <i class="fa fa-linkedin"></i>
+              <span>Linkedin</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://scholar.google.com/citations?user=gUBZ64sAAAAJ">
+              <i class="fa fa-google"></i>
+              <span>Google Scholar</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/pagrumiaux">
+              <i class="fa fa-github"></i>
+              <span>Github</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- sidebar-menu  -->
+    </div>
+  </nav>
+  <!-- sidebar-wrapper  -->
+  
+  <main class="page-content">
+    <div class="container-fluid">     
+      <div class="row">
+        <div class="form-group col-md-12">
+          <p>I am currently a PhD student in <b>audio</b> and <b>artificial intelligence</b>, in a collaboration between Orange Labs and <a href="http://www.gipsa-lab.fr/">GIPSA-lab</a>. I am in the audio research team within Orange Labs, and in the <a href="http://www.gipsa-lab.fr/crissp/accueil-crissp.php">CRISSP</a> team at GIPSA-lab.</p>
+          <p>My <a href="http://www.theses.fr/s209940">PhD research</a> focuses on the problem of <b>audio source localization</b> and <b>tracking</b>, specifically on speech signals. I am investigating the possibilities of using deep learning on 3D audio signals to improve the existing models.</p>
+          <p>My other research interests include <b>music information retrieval</b> and <b>music generation</b>.</p>
+          <p>In addition to research, playing and composing music take up a lot of space in my daily life. I have been playing the <b>piano</b> since I am 6, and I like playing pieces in different styles like classical music, blues, boogie-woogie or minimal music. I also like playing by ear and rearranging songs I like.
+          <p>I also spend a lot of time composing music using synthesizers and a DAW (Ableton Live in my case). I create tracks in several genres I love, including <b>dub music, EDM, ambient, psytrance, rap beats</b> and other styles I don't know how to classify.</p>
+          
+          <p>I also like doing <b>sound design</b> by messing around with synthesizers, such as Arturia's Microfreak, Arturia's Pigments (yes I like Arturia's products!) or Novation's Bass Station II. I sometimes record sounds from the world with a microphone, either to process and use them in my creations, or for nothing but pleasure.
+        </div>
+      </div>
+      
+      <hr>
+      <footer class="text-center">
+          <small>
+            © 2020 Pierre-Amaury Grumiaux
+          </small>
+      </footer>
+    </div>
+  </main>
+  <!-- page-content -->
+</div>
+<!-- page-wrapper -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+</body>
+
+
+
+  </body>
+</html>
