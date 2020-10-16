@@ -500,3 +500,11 @@ body {
 .container-fluid div div a i {
     background: #3a3f48;
 }
+
+.container-fluid a {
+    color: #0d8bd9;
+}
+
+.container-fluid a:hover {
+    color: #074d78;
+}
