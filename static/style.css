@@ -111,8 +111,8 @@ body {
 /*----------------show sidebar button----------------*/
 #show-sidebar {
   position: fixed;
-  left: 0;
-  top: 10px;
+  left: 0px;
+  top: 70px;
   border-radius: 0 4px 4px 0px;
   width: 35px;
   transition-delay: 0.3s;
@@ -170,9 +170,11 @@ body {
   flex-grow: 1;
 }
 
-.sidebar-wrapper .sidebar-brand #close-sidebar {
-  cursor: pointer;
-  font-size: 20px;
+.sidebar-wrapper .sidebar-content #close-sidebar {
+  cursor: pointer !important;
+  font-size: 25px;
+  text-align: right;
+  margin-right: 10px;
 }
 
 /*--------------------sidebar-header----------------------*/
@@ -496,7 +498,6 @@ body {
     border-right: none;
 }
 
-
 .container-fluid div div a i {
     background: #3a3f48;
 }
@@ -505,6 +506,33 @@ body {
     color: #0d8bd9;
 }
 
-.container-fluid a:hover {
+.container-fluid div div p a:hover {
     color: #074d78;
+}
+
+button:hover{
+	color: white !important;
+}
+
+a:hover {
+    text-decoration:none;
+}
+
+.noMargin{
+	/* margin-right: 5px !important; */
+	/* margin-left: 5px !important; */
+	margin: auto;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+.borderOnHover:hover{
+	border: 2px !important;
+	border-color: black !important;
+	border-style: solid !important;
+}
+
+
+.hoverStyle:hover{
+	box-shadow: 0 0 5px #343a40;
 }
