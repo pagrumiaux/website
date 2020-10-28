@@ -541,3 +541,8 @@ a:hover {
 .hoverStyle:hover{
 	box-shadow: 0 0 5px #343a40;
 }
+
+.titles{
+	margin-bottom: 0px;
+	text-align: center;
+}
