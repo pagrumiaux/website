@@ -546,3 +546,24 @@ a:hover {
 	margin-bottom: 0px;
 	text-align: center;
 }
+
+.presetButtons{
+	margin-top: 1px;
+	color: white !important;
+}
+
+
+.collapseArrow{
+  position: relative;
+}
+
+.collapseArrow:after {
+  font-family: 'Arial';
+  content: "▼";
+  position: absolute;
+  color: white;
+  font-size: 18px;
+  line-height: 22px;
+  right: 20px;
+  top: calc(50% - 10px);
+}
